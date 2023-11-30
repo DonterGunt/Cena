@@ -422,7 +422,7 @@ html {
   
   p {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   blockquote {
@@ -3021,7 +3021,7 @@ html {
     }
 
     .display2 {
-      font-size: 50px;
+      font-size: 10vm;
     }
   
     .navbar {
