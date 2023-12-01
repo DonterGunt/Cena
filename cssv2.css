@@ -3392,13 +3392,13 @@ html {
   
   h3 {
     color: var(--white);
-    text-transform: capitalize;
+    text-transform: none;
     margin-top: 0;
     margin-bottom: 0;
     font-family: Inter, sans-serif;
     font-size: 32px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 30px;
   }
   
   h4 {
@@ -4927,7 +4927,7 @@ html {
   }
   
   .color-primary {
-    color: #1d94f5;
+    color: #2c5b02;
   }
   
   .hero-slider {
@@ -4969,7 +4969,7 @@ html {
   }
   
   .button {
-    background-color: var(--primary);
+    background-color: #2c5b02;
     color: var(--black-lighter);
     text-transform: capitalize;
     border-radius: 100px;
@@ -4983,7 +4983,7 @@ html {
   }
   
   .button:hover {
-    background-color: var(--white);
+    background-color: #b32428;
   }
   
   .featured-image-wrapper {
@@ -7954,3 +7954,30 @@ html {
   p {
     word-wrap: break-word;
 }
+
+
+
+  body {
+    position: relative;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Color negro semi-transparente, ajusta según sea necesario */
+    z-index: -1; /* Coloca el pseudo-elemento detrás de otros contenidos */
+  }
+  
+  /* Resto de estilos para el fondo de la imagen */
+  body {
+    background-image: url('https://i.ibb.co/TYV7jYh/02.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
